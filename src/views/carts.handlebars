@@ -1,0 +1,24 @@
+<div>
+
+<h3>Mi Carrito</h3>
+
+	{{#each productsDocs}}
+    <div >
+      <p>Title: {{this.title}}</p>
+      <p>Description: {{this.description}}</p>
+      <p>Code: {{this.code}}</p>
+      <p>Price: ${{this.price}}</p>
+      <p>Stock: {{this.stock}}</p>
+      <p>Category: {{this.category}}</p>
+      <p>Id: {{this.prodId}}</p>
+      <input type="button" value="Agregar al carrito" />
+    	 {{!-- <a href="/products?page={{page}}&sort=desc"><button id=addToCart>Agregar al carrito</button></a> --}}
+      <p>-----------------------------------------</p>
+
+    </div>
+{{/each}}
+
+</div>
+
+
+<script src='/js/products.js'></script>
